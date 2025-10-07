@@ -7,7 +7,7 @@ export default function Contactme() {
   return (
     <section className="max-w-7xl relative mx-auto mt-32 px-4">
       {/* Decorative Dots */}
-      <Dots position={{ right: "-10%", bottom: "100%", smright: "120px", smbottom: "55px" }} />
+      <Dots position={{ right: "0%", bottom: "80%", smright: "120px", smbottom: "55px" }} />
 
       {/* Decorative Square Outline */}
       <div className="absolute top-0 left-[-20%] h-32 w-32 border border-[var(--accent)] opacity-70" />

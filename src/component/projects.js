@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Projects = () => {
   const projects = [
@@ -79,16 +80,18 @@ const Projects = () => {
         </div>
 
         {/* View All Button */}
+        <Link href={"/work"}>
         <motion.button
           variants={fadeUp(0.6)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
-          className="relative text-[var(--accent)] text-md sm:text-lg ml-6 whitespace-nowrap group transition-transform duration-300 hover:-translate-y-[2px]"
-        >
+          className="relative md:flex hidden text-[var(--accent)] text-md sm:text-lg ml-6 whitespace-nowrap group transition-transform duration-300 hover:-translate-y-[2px]"
+          >
           view all →
           <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[var(--accent)] transition-all duration-500 group-hover:w-full"></span>
         </motion.button>
+          </Link>
       </div>
 
       {/* Projects Grid */}
