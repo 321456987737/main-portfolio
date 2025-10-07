@@ -159,7 +159,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="flex justify-center items-center gap-10 pb-6 w-full"
+              className="flex justify-center items-center gap-10 pb-12 w-full"
             >
               {[
                 {
