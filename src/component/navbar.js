@@ -40,15 +40,14 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
         >
           <Link href={"/"}>
-          Iftikhar<span className="text-[var(--accent)]"></span>
+          Iftikhar<span className="text-[var(--accent)]">.</span>
           </Link>
-          <div className="cursor-pointer">
-          <ThemeToggle/>
-        </div>
+          
         </motion.h1>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 text-[var(--text)] font-medium">
+        
           {navLinks.map((link, index) => {
             const isActive = pathname === link.href;
             return (
@@ -75,7 +74,9 @@ const Navbar = () => {
             );
           })}
         </nav>
-
+  <div className="cursor-pointer md:inline-block hidden">
+          <ThemeToggle/>
+        </div>
         {/* Mobile Hamburger Button */}
         <div
           ref={btnRef}
@@ -130,6 +131,9 @@ const Navbar = () => {
             transition={{ delay: 0.15, duration: 0.3 }}
             className="fixed inset-0 z-[60] flex flex-col justify-between px-8 pt-28 bg-[var(--bg)] pb-8  text-[var(--text)] min-h-screen"
           >
+            <div className="cursor-pointer absolute top-5 left-5">
+          <ThemeToggle/>
+        </div>
             {/* Menu Links */}
             <div className="flex flex-col items-start space-y-6">
               {navLinks.map((link, index) => (

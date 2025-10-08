@@ -146,7 +146,7 @@ const Projects = () => {
               </div>
 
               {/* Live Button */}
-              <a
+              {/* <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -156,7 +156,20 @@ const Projects = () => {
                            hover:-translate-y-[2px] hover:bg-[var(--accent)] hover:text-[var(--bg)]"
               >
                 Live &laquo;--&raquo;
-              </a>
+              </a> */}
+              <a
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 w-[136px] inline-flex items-center justify-center px-6 py-2 
+             border text-[var(--accent)] font-medium rounded-sm cursor-pointer 
+             transition-all duration-300 border-[var(--accent)] 
+             hover:-translate-y-[2px] hover:bg-[var(--accent)] hover:text-[var(--bg)] 
+             whitespace-nowrap"
+>
+  Live &laquo;--&raquo;
+</a>
+
             </div>
           </motion.div>
         ))}
