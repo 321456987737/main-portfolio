@@ -10,15 +10,15 @@ import Aboutme from "@/component/aboutme";
 import Contactme from "@/component/contactme"
 const Page = () => {
   return (
-    <div className="bg-[var(--bg)] relative  overflow-x-hidden ">
+    <div className="bg-[var(--bg)] relative  overflow-x-hidden pt-16 pb-32">
        <div className="h-32 w-32 border border-[var(--accent)] absolute right-[-50px] sm:top-[150vh] top-[165vh] "/>
       <div className="md:h-[80vh] h-[100vh] ">
         <Topsection />
       </div>
 
-      <div className="h-22 w-full flex justify-center items-center mt-16">
-        <div className="h-[66px] w-[70%] max-w-[650px] border-2 border-gray-400 relative">
-          <div className="h-[40px] w-[120px] border-2 border-gray-400 absolute right-[-2px] bottom-[-40px]" />
+      <div className="h-22 w-full flex justify-center items-center md:mt-16 mt-8">
+        <div className="h-[66px] w-[70%] max-w-[650px] border-2 border-[var(--muted)] relative">
+          <div className="h-[40px] w-[120px] border-2 border-[var(--muted)]  absolute right-[-2px] bottom-[-40px]" />
 
           <div className="flex bg-[var(--bg)] absolute top-[-7px] w-[34px]  items-center justify-center left-3">
             <div className="h-3 w-3 border border-[var(--accent)] rotate-45 bg-[var(--accent)]"></div>
@@ -26,7 +26,7 @@ const Page = () => {
           </div>
           <div className="flex bg-[var(--bg)] absolute bottom-[-7px] w-[34px]  items-center justify-center right-3">
             <div className="h-3 w-3 border border-[var(--accent)] rotate-45 bg-[var(--accent)]"></div>
-            <div className="h-3 ml-[-4px] w-3 border border-[var(--accent)] rotate-45 bg-[var(--bg)]"></div>
+            <div className="h-3 ml-[-4px] w-3 border  border-[var(--accent)] rotate-45 bg-[var(--bg)]"></div>
           </div>
         </div>
 

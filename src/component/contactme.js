@@ -5,7 +5,7 @@ import { Dots } from "@/component/design";
 
 export default function Contactme() {
   return (
-    <section className="max-w-7xl relative mx-auto mt-32 px-4">
+    <section className="max-w-7xl relative mx-auto pt-32 px-4 h-full">
       {/* Decorative Dots */}
       <Dots position={{ right: "0%", bottom: "80%", smright: "120px", smbottom: "55px" }} />
 
@@ -25,7 +25,7 @@ export default function Contactme() {
             <header className="mb-6">
               <h2 className="flex items-center gap-3 sm:text-4xl text-2xl font-bold">
                 <span className="text-[var(--accent)]">#</span>
-                <span className="font-mono">contacts</span>
+                <span className="font-mono  text-[var(--text)]">contacts</span>
                 <span className="hidden sm:inline-block border-t-2 border-[var(--accent)] ml-4 w-48" />
               </h2>
             </header>
@@ -45,7 +45,7 @@ export default function Contactme() {
             viewport={{ once: true, amount: 0.3 }}
           >
             <div className="relative">
-              <div className="w-[260px] border border-[var(--text)]/30 bg-[var(--bg,#fff)] rounded-sm p-4 shadow-sm text-[14px] font-mono select-none">
+              <div className="w-[260px] border border-[var(--text)]/30 bg-[var(--bg)] rounded-sm p-4 shadow-sm text-[14px] font-mono select-none">
                 <h4 className="text-sm font-semibold text-[var(--text)] mb-3">
                   Message me here
                 </h4>

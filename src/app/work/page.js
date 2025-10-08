@@ -93,7 +93,7 @@ const Page = () => {
     }, []);
   
   return (
-    <div className="w-full flex flex-col items-center justify-center pt-16">
+    <div className="w-full flex flex-col  items-center justify-center py-16">
       {/* Main Projects Section */}
       <div className="z-4">
         <Projects />
@@ -141,7 +141,7 @@ const Page = () => {
                   }}
                 />
                 <div className="absolute w-32 h-32 top-[100%] left-[-32px] z-[-1] border-2 border-[var(--accent)]" />
-                <div className="absolute w-32 h-32 top-[175%] right-[-32px] z-[-1] border-2 border-[var(--accent)]" />
+                {/* <div className="absolute w-32 h-32 top-[175%] right-[-32px] z-[-1] border-2 border-[var(--accent)]" /> */}
                 <Design
                   position={{ left: "0px", top: "30%", smtop: "15%", smleft: "45%" }}
                 />
@@ -157,8 +157,8 @@ const Page = () => {
         {/* Section Header */}
         <div className="flex mx-4 w-full items-center justify-between">
           <div className="flex items-center gap-4 w-full">
-            <h2 className="sm:text-4xl text-2xl font-bold flex items-center gap-2 whitespace-nowrap">
-              <span className="text-[var(--accent)]">#</span>
+            <h2 className="sm:text-4xl text-[var(--text)] text-2xl font-bold flex items-center gap-2 whitespace-nowrap">
+              <span className="text-[var(--accent)] mr-3">#</span>
               <span>Small-projects</span>
             </h2>
 
@@ -185,7 +185,7 @@ const Page = () => {
                 scale: 1.02,
                 transition: { duration: 0.2 },
               }}
-              className="group relative bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 hover:border-[var(--accent)] transition-all duration-300"
+              className="group relative bg-[var(--card)] border border-[var(--text)] rounded-2xl p-6 hover:border-[var(--accent)] transition-all duration-300"
             >
               <h3 className="text-lg font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">
                 {proj.title}

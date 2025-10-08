@@ -49,7 +49,7 @@ export default function Skills() {
             variants={fadeUp}
           >
             <span className="text-[var(--accent)]">#</span>
-            <span>Skills</span>
+            <span className="text-[var(--text)]">Skills</span>
           </motion.h2>
 
           <motion.div className="flex-1" variants={fadeUp}>
@@ -117,19 +117,19 @@ export default function Skills() {
               key={card.title}
               aria-labelledby={`skill-${idx}`}
               tabIndex={0}
-              className="border border-[var(--text)]/10 rounded-sm overflow-hidden bg-white min-h-[110px] p-0
+              className="border border-[var(--text)]/10 rounded-sm overflow-hidden bg-[var(--bg)] min-h-[110px] p-0
                          focus:outline-none focus-visible:ring-2 transition-all focus-visible:ring-[var(--accent)]/30
                          hover:-translate-y-2 duration-250 hover:shadow-[0_8px_20px_-8px_var(--accent)]/30"
               variants={fadeUp}
             >
-              <header className="px-5 py-3 border-b border-[var(--text)]/10 bg-white">
-                <h3 id={`skill-${idx}`} className="font-bold text-lg font-sans">
+              <header className="px-5 py-3 border-b border-[var(--text)]/10 bg-[var(--bg)]">
+                <h3 id={`skill-${idx}`} className="font-bold text-lg font-sans text-[var(--text)]">
                   {card.title}
                 </h3>
               </header>
 
-              <div className="px-5 py-6 bg-white">
-                <ul className="flex flex-wrap gap-3 font-mono text-[15px] text-[#4b5665] leading-relaxed">
+              <div className="px-5 py-6 bg-[var(--bg)]">
+                <ul className="flex flex-wrap gap-3 font-mono text-[15px] text-[var(--muted)] leading-relaxed">
                   {card.items.map((it) => (
                     <li key={it} className="inline-block whitespace-nowrap">
                       {it}

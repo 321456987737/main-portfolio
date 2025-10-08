@@ -46,7 +46,7 @@ const Projects = () => {
   });
 
   return (
-    <section className="flex flex-col w-full mx-4 max-w-7xl">
+    <section className="flex flex-col w-full mx-4 max-w-7xl mt-16">
       {/* Header */}
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-4 w-full">
@@ -59,7 +59,7 @@ const Projects = () => {
             className="sm:text-4xl text-2xl font-bold flex items-center gap-2 whitespace-nowrap"
           >
             <span className="text-[var(--accent)]">#</span>
-            <span>projects</span>
+            <span className="text-[var(--text)]">projects</span>
           </motion.h2>
 
           {/* Animated line */}

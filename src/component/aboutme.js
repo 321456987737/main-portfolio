@@ -44,21 +44,42 @@ export default function Aboutme() {
           viewport={{ once: true }}
         >
           <Dots
-            position={{ right: "30%", bottom: "50%", smright: "120px", smbottom: "55px" }}
+            position={{
+              right: "30%",
+              bottom: "50%",
+              smright: "120px",
+              smbottom: "55px",
+            }}
           />
           <Dots
-            position={{ right: "0", bottom: "0", smright: "120px", smbottom: "55px" }}
+            position={{
+              right: "0",
+              bottom: "0",
+              smright: "120px",
+              smbottom: "55px",
+            }}
           />
           <Dots
-            position={{ right: "60px", bottom: "30%", smright: "120px", smbottom: "55px" }}
+            position={{
+              right: "60px",
+              bottom: "30%",
+              smright: "120px",
+              smbottom: "55px",
+            }}
           />
-          <Design position={{ left: "-14%", top: "30%", smtop: "15%", smleft: "45%" }} />
+          <Design
+            position={{ left: "-14%", top: "30%", smtop: "15%", smleft: "45%" }}
+          />
         </motion.div>
       )}
 
       {/* Outer box */}
       <div className="rounded-sm overflow-hidden">
-        <div className={`flex w-full gap-0 md:gap-0 ${isWide ? "flex-row" : "flex-col"}`}>
+        <div
+          className={`flex w-full gap-0 md:gap-0 ${
+            isWide ? "flex-row" : "flex-col"
+          }`}
+        >
           {/* LEFT TEXT SECTION */}
           <motion.div
             className={`${isWide ? "w-1/2 pr-8" : "w-full pb-6"} px-4 py-8`}
@@ -71,7 +92,7 @@ export default function Aboutme() {
             <motion.header className="mb-6" variants={fadeUp}>
               <h2 className="flex items-center gap-3 sm:text-4xl text-2xl font-bold">
                 <span className="text-[var(--accent)]">#</span>
-                <span className="font-mono">about-me</span>
+                <span className="font-mono  text-[var(--text)]">about-me</span>
                 <motion.span
                   className="inline-block flex-1 border-t-2 border-[var(--accent)] ml-4 w-48 origin-left"
                   initial={{ scaleX: 0 }}
@@ -88,24 +109,27 @@ export default function Aboutme() {
               variants={container}
             >
               <motion.p variants={fadeUp}>
-                Hello, I’m <strong>Iftikhar Ali</strong> — a full-stack web developer focused on
-                modern, responsive experiences using Next.js and Node.js.
+                Hello, I’m <strong>Iftikhar Ali</strong> — a full-stack web
+                developer focused on modern, responsive experiences using
+                Next.js and Node.js.
               </motion.p>
               <motion.p variants={fadeUp}>
-                I build production-level applications with Next.js, MongoDB, Mongoose, Tailwind
-                CSS, and robust authentication (NextAuth / OAuth). I love crafting performant UIs,
-                server-side logic, and reliable APIs.
+                I build production-level applications with Next.js, MongoDB,
+                Mongoose, Tailwind CSS, and robust authentication (NextAuth /
+                OAuth). I love crafting performant UIs, server-side logic, and
+                reliable APIs.
               </motion.p>
               <motion.p variants={fadeUp}>
-                I’m driven by clean architecture, accessible UI, and developer ergonomics. I keep
-                projects maintainable by using best practices and automated workflows.
+                I’m driven by clean architecture, accessible UI, and developer
+                ergonomics. I keep projects maintainable by using best practices
+                and automated workflows.
               </motion.p>
             </motion.div>
 
             {/* Button */}
             <motion.a
               href="/about-me"
-              className="inline-block mt-6 px-4 py-2 border border-[var(--accent)] text-[var(--accent)] font-medium rounded-sm hover:bg-[var(--accent)] hover:text-white transition-all duration-300"
+              className="inline-block mt-6 px-4 py-2 border border-[var(--accent)] text-[var(--accent)] font-medium rounded-sm hover:bg-[var(--accent)] hover:text-[var(--bg)] transition-all duration-300"
               variants={fadeUp}
             >
               Read more →
@@ -113,38 +137,39 @@ export default function Aboutme() {
           </motion.div>
 
           {/* RIGHT IMAGE SECTION */}
-         <motion.div
-  className={`${isWide ? "w-1/2" : "w-full"} relative px-4 py-6 flex items-center justify-center`}
-  initial={{ opacity: 0, y: 60 }}       // 👈 start lower and invisible
-  whileInView={{ opacity: 1, y: 0 }}    // 👈 move upward and appear
-  transition={{ duration: 1, ease: "easeOut" }}
-  viewport={{ once: true, amount: 0.3 }}
->
-  {/* Image */}
-  <div className="relative group w-[280px] sm:w-[320px] md:w-[380px] aspect-[3/4] rounded-xl overflow-hidden">
-    <Image
-      src="/iftikhar.png"
-      alt="Iftikhar Ali"
-      width={380}
-      height={500}
-      className="object-cover transition-transform duration-700 group-hover:scale-105"
-      priority
-    />
-  </div>
+          <motion.div
+            className={`${
+              isWide ? "w-1/2" : "w-full"
+            } relative px-4 py-6 flex items-center justify-center`}
+            initial={{ opacity: 0, y: 60 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            {/* Image */}
+            <div className="relative group w-[280px] sm:w-[320px] md:w-[380px] aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/iftikhar.png"
+                alt="Iftikhar Ali"
+                width={380}
+                height={500}
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                priority
+              />
+            </div>
 
-  {/* Name Tag */}
-  <motion.div
-    className="absolute h-10 w-full text-center flex gap-3 items-center justify-center border border-[var(--text)]/80 bottom-[-40px] bg-[var(--bg,#fff)]"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-    viewport={{ once: true }}
-  >
-    <div className="h-3 w-3 bg-[var(--accent)] ml-[-30px]" />
-    <span className="capitalize">iftikhar ali</span>
-  </motion.div>
-{/* </motion.div> */}
-
+            {/* Name Tag */}
+            <motion.div
+              className="absolute h-10 w-full text-center flex gap-3 items-center justify-center border border-[var(--text)]/80 bottom-[-40px] bg-[var(--bg)]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <div className="h-3 w-3 bg-[var(--accent)] ml-[-30px]" />
+              <span className="capitalize">iftikhar ali</span>
+            </motion.div>
+            {/* </motion.div> */}
 
             {/* Dotted Decoration */}
             <motion.div
@@ -156,7 +181,10 @@ export default function Aboutme() {
             >
               <div className="grid grid-cols-5 grid-rows-6 md:gap-[12px] gap-[9px]">
                 {Array.from({ length: 25 }).map((_, i) => (
-                  <div key={i} className="w-1 h-1 bg-[var(--accent)] rounded-full" />
+                  <div
+                    key={i}
+                    className="w-1 h-1 bg-[var(--accent)] rounded-full"
+                  />
                 ))}
               </div>
             </motion.div>

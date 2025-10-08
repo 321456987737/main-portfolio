@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Github, Linkedin, Instagram } from "lucide-react";
-
+import ThemeToggle from "@/component/lighttodark"
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Work", href: "/work" },
@@ -43,7 +43,9 @@ const Navbar = () => {
           Iftikhar<span className="text-[var(--accent)]">.</span>
           </Link>
         </motion.h1>
-
+        <div>
+          <ThemeToggle/>
+        </div>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 text-[var(--text)] font-medium">
           {navLinks.map((link, index) => {
@@ -57,9 +59,7 @@ const Navbar = () => {
               >
                 <Link
                   href={link.href}
-                  className={`transition-colors duration-300 ${
-                    isActive ? "text-black" : "text-[var(--text)]"
-                  }`}
+                  className={`transition-colors duration-300 text-[var(--text)] `}
                 >
                   {link.name}
                 </Link>

@@ -63,15 +63,16 @@ export default function RootLayout({ children }) {
               >
                 <Icon
                   size={24}
-                  className="text-black group-hover:text-[var(--accent)] transition-all"
+                  className="text-[var(--text)] group-hover:text-[var(--accent)] transition-all"
                 />
                 <span className="absolute inset-0 scale-0 group-hover:scale-100 rounded-full bg-[var(--accent)]/10 transition-transform duration-300"></span>
               </Link>
             ))}
           </motion.div>
         </div>
-        <div className="pt-16">
+        <div  className="bg-[var(--bg)]">
           {children}
+
           <Footer />
         </div>
       </body>

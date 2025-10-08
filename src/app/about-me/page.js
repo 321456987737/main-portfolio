@@ -91,7 +91,7 @@ export default function AboutPage() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-12 overflow-hidden">
+    <main className="max-w-7xl  py-32 mx-auto px-4  overflow-x-hidden">
       <div className="hidden [@media(min-width:1500px)]:block">
         <Dots
           position={{
@@ -141,7 +141,8 @@ export default function AboutPage() {
         className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start"
       >
         <div className="lg:col-span-2">
-          <h1 className="text-4xl sm:text-5xl font-bold font-mono mb-4">
+          <h1 className="sm:text-4xl text-2xl font-bold font-mono mb-4 text-[var(--text)]">
+            <span className="text-[var(--accent)] mr-3">#</span>
             Iftikhar Ali
           </h1>
           <p className="text-lg text-[var(--text)]/90 max-w-2xl leading-relaxed font-mono">
@@ -158,7 +159,7 @@ export default function AboutPage() {
           >
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=ifti.hazara205@gmail.com&su=Freelance%20Inquiry&body=Hi%20Iftikhar,%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you."
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-[var(--accent)] text-[var(--accent)] font-mono text-sm hover:bg-[var(--accent)] hover:text-white transition"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-[var(--accent)] text-[var(--accent)] font-mono text-sm hover:bg-[var(--accent)] hover:text-[var(--bg)] transition"
             >
               <Mail size={16} /> Email
             </a>
@@ -166,7 +167,7 @@ export default function AboutPage() {
               href="https://github.com/321456987737"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-[var(--muted)] text-sm font-mono hover:border-[var(--accent)] hover:text-[var(--accent)] transition"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-[var(--muted)] text-sm text-[var(--text)] font-mono hover:border-[var(--accent)] hover:text-[var(--accent)] transition"
             >
               <Github size={16} /> GitHub
             </a>
@@ -174,7 +175,7 @@ export default function AboutPage() {
               href="https://www.linkedin.com/in/iftikhar-ali-61a210340/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-[var(--muted)] text-sm font-mono hover:border-[var(--accent)] hover:text-[var(--accent)] transition"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-[var(--muted)] text-sm font-mono text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition"
             >
               <Linkedin size={16} /> LinkedIn
             </a>
@@ -201,7 +202,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="w-[260px] border border-[var(--text)]/20 rounded-sm p-3 text-center font-mono"
+            className="w-[260px] border border-[var(--text)]/20 text-[var(--text)] rounded-sm p-3 text-center font-mono"
           >
             <div className="text-sm font-semibold">Full-Stack Developer</div>
             <div className="text-xs text-[var(--text)]/80 mt-1">
@@ -218,7 +219,7 @@ export default function AboutPage() {
         viewport={{ once: true }}
         variants={fadeUp}
         transition={{ duration: 0.7 }}
-        className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8"
+        className="mt-12 grid text-[var(--text)] grid-cols-1 lg:grid-cols-3 gap-8"
       >
         <div className="lg:col-span-2">
           <h2 className="text-2xl font-mono font-semibold mb-4">
@@ -231,7 +232,7 @@ export default function AboutPage() {
                 key={idx}
                 variants={fadeUp}
                 transition={{ delay: idx * 0.1 }}
-                className="border-l-2 pl-4 border-[var(--muted,#e6e6e6)]"
+                className="border-l-2 pl-4 border-[var(--muted)]"
               >
                 <div className="font-mono font-semibold">{ex.title}</div>
                 <div className="text-sm text-[var(--text)]/70 mt-1">
@@ -294,7 +295,7 @@ export default function AboutPage() {
         viewport={{ once: true }}
         variants={fadeUp}
         transition={{ duration: 0.6 }}
-        className="mt-12"
+        className="mt-12 text-[var(--text)]"
       >
         <h2 className="text-2xl font-mono font-semibold mb-4">Fun facts</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -318,7 +319,7 @@ export default function AboutPage() {
         viewport={{ once: true }}
         variants={fadeUp}
         transition={{ duration: 0.7 }}
-        className="mt-12 border border-[var(--muted)] rounded-md p-6 flex flex-col sm:flex-row items-center justify-between gap-4"
+        className="mt-12 border text-[var(--text)] border-[var(--muted)] rounded-md p-6 flex flex-col sm:flex-row items-center justify-between gap-4"
       >
         <div>
           <div className="font-mono font-semibold">Looking to collaborate?</div>
@@ -330,7 +331,7 @@ export default function AboutPage() {
         <div className="flex gap-3">
           <a
                        href="https://mail.google.com/mail/?view=cm&fs=1&to=ifti.hazara205@gmail.com&su=Freelance%20Inquiry&body=Hi%20Iftikhar,%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you."
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[var(--accent)] text-[var(--accent)] font-mono hover:bg-[var(--accent)] hover:text-white transition"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-[var(--accent)] text-[var(--accent)] font-mono hover:bg-[var(--accent)] hover:text-[var(--bg)] transition"
           >
             <Mail size={16} /> Get in touch
           </a>

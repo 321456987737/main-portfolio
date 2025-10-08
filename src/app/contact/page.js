@@ -2,7 +2,7 @@ import React from "react";
 import Contactme from "@/component/contactme";
 const Page = () => {
   return (
-    <div>
+    <div className="h-[80vh] ">
       <Contactme />
     </div>
   );
