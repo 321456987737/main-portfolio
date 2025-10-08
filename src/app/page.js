@@ -37,7 +37,7 @@ const Page = () => {
       <div className="flex items-center justify-center mt-32">
             <Projects />
       </div>
-      <div className="w-full mx-4">
+      <div className="w-full px-4">
           <Skills />
       </div>
       <div>

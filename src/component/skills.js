@@ -32,7 +32,7 @@ export default function Skills() {
   return (
     <section
       aria-labelledby="skills-heading"
-      className="flex flex-col w-full max-w-7xl mx-auto mt-32 px-4"
+      className="flex flex-col w-full max-w-7xl mx-auto mt-32"
     >
       {/* Header */}
       <motion.div
@@ -108,7 +108,7 @@ export default function Skills() {
 
         {/* RIGHT - skill cards grid */}
         <motion.div
-          className="w-full md:w-1/2 grid gap-x-6 gap-y-8"
+          className="w-full md:w-1/2 grid gap-x-6 gap-y-8 "
           style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}
           variants={containerVariants}
         >
