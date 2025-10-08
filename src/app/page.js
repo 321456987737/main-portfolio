@@ -44,16 +44,7 @@ const Page = () => {
         <Aboutme />
       </div>
       <div >
-           {/* <Dots
-                      position={{
-                        right: "93%",
-                        bottom: "-60%",
-                        smright: "120px",
-                        smbottom: "55px",
-                      }}
-                    /> */}
-                    {/* <div className="absolute right-[-50px] top-[-60px] w-24 h-24 border border-[var(--accent)]"/> */}
-        <Contactme />
+         <Contactme />
       </div>
     </div>
   );

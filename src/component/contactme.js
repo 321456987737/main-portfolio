@@ -10,7 +10,7 @@ export default function Contactme() {
       <Dots position={{ right: "0%", bottom: "80%", smright: "120px", smbottom: "55px" }} />
 
       {/* Decorative Square Outline */}
-      <div className="absolute top-[50%] left-[-20%] h-32 w-32 border border-[var(--accent)] opacity-70" />
+      {/* <div className="absolute top-[50%] left-[-20%] h-32 w-32 border border-[var(--accent)] opacity-70" /> */}
 
       <div className="rounded-sm overflow-hidden">
         <div className="flex w-full flex-col lg:flex-row gap-0">
