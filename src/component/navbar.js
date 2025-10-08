@@ -36,16 +36,17 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto h-16 flex items-center justify-between px-6">
         {/* Logo */}
         <motion.h1
-          className="text-[var(--text)] text-xl font-semibold tracking-tight cursor-pointer"
+          className="text-[var(--text)] flex gap-3  text-xl font-semibold tracking-tight cursor-pointer"
           whileHover={{ scale: 1.05 }}
         >
           <Link href={"/"}>
-          Iftikhar<span className="text-[var(--accent)]">.</span>
+          Iftikhar<span className="text-[var(--accent)]"></span>
           </Link>
-        </motion.h1>
-        <div>
+          <div className="cursor-pointer">
           <ThemeToggle/>
         </div>
+        </motion.h1>
+        
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 text-[var(--text)] font-medium">
           {navLinks.map((link, index) => {
@@ -127,7 +128,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ delay: 0.15, duration: 0.3 }}
-            className="fixed inset-0 z-[60] flex flex-col justify-between px-8 pt-28 pb-8 bg-transparent text-black min-h-screen"
+            className="fixed inset-0 z-[60] flex flex-col justify-between px-8 pt-28 bg-[var(--bg)] pb-8  text-[var(--text)] min-h-screen"
           >
             {/* Menu Links */}
             <div className="flex flex-col items-start space-y-6">
@@ -159,7 +160,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="flex justify-center items-center gap-10 pb-12 w-full"
+              className="flex text-[var(--text)] justify-center items-center gap-10 pb-12 w-full"
             >
               {[
                 {
@@ -183,7 +184,7 @@ const Navbar = () => {
                 >
                   <Icon
                     size={30}
-                    className="text-black group-hover:text-[var(--accent)] transition-all"
+                    className="text-[var(--text)] group-hover:text-[var(--accent)] transition-all"
                   />
                   <span className="absolute inset-0 scale-0 group-hover:scale-100 rounded-full bg-[var(--accent)]/10 transition-transform duration-300"></span>
                 </Link>
