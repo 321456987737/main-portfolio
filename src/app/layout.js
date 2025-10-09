@@ -11,10 +11,10 @@ const firaCode = Fira_Code({
   variable: "--font-fira",
 });
 export const metadata = {
-  title: "Your Portfolio Title",
-  description: "Your description",
-  icons: {     
-    icon: "/favicon.png", // or "/favicon.ico"
+  title: "IFtikhar ali | portfolio",
+  description: "I am a full-stack web developer focused on modern, responsive experiences using Next.js and Node.js.",
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
