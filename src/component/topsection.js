@@ -70,7 +70,7 @@ const Topsection = () => {
               variants={fadeUp(1.4)}
               initial="hidden"
               animate="visible"
-              className="mt-8 hidden md:flex justify-start"
+              className="mt-8 hidden md:flex gap-4 justify-start"
             >
               <Link href="/contact" className="group relative inline-flex">
                 <motion.button
@@ -80,7 +80,26 @@ const Topsection = () => {
                   Let’s Work Together
                 </motion.button>
               </Link>
+              <a href="/Iftikhar-Ali-FlowCV-Resume-20251010 (8).pdf" className="group relative inline-flex">
+                <motion.button
+                  whileTap={{ scale: 0.97 }}
+                  className="px-6 py-2.5 rounded-sm border text-[var(--text)] hover:text-[var(--bg)] hover:bg-[var(--accent)] border-[var(--accent)] duration-300"
+                >
+                  Resume
+                </motion.button>
+              </a>
             </motion.div>
+                  <a href="/Iftikhar-Ali-FlowCV-Resume-20251010 (8).pdf" className="group relative inline-flex">
+                <motion.button
+                 variants={fadeUp(1.4)}
+              initial="hidden"
+              animate="visible"
+                  whileTap={{ scale: 0.97 }}
+                  className="px-6 md:hidden flex py-2.5 rounded-sm border text-[var(--text)] hover:text-[var(--bg)] hover:bg-[var(--accent)] border-[var(--accent)] duration-300"
+                >
+                  Resume
+                </motion.button>
+              </a>
           </div>
 
           {/* RIGHT: Image */}
