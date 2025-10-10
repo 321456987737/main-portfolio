@@ -22,15 +22,15 @@ const layoutwraper = () => {
             >
               {[
                 {
-                  href: "https://github.com/",
+                  href:"https://github.com/321456987737",
                   Icon: Github,
                 },
                 {
-                  href: "https://linkedin.com/",
+                  href:"https://www.linkedin.com/in/iftikhar-ali-61a210340/",
                   Icon: Linkedin,
                 },
                 {
-                  href: "https://instagram.com/",
+                  href:"https://www.instagram.com/ifti_ali_ee/",
                   Icon: Instagram,
                 },
               ].map(({ href, Icon }, i) => (
