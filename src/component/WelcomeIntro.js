@@ -58,7 +58,7 @@ export default function WelcomeIntro() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Welcome to my portfolio
+              Welcome to my portfolio.
             </motion.p>
             <motion.div
               aria-hidden="true"
