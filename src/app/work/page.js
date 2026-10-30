@@ -104,7 +104,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-16">
+    <div className="w-full flex flex-col items-center justify-center md:py-16 py-8">
       {/* Main Featured Projects */}
       {/* <div className="z-4">
         <Projects />
@@ -123,7 +123,7 @@ const Page = () => {
       )}
 
       {/* All Projects - Same card style as Projects component */}
-      <div className="flex flex-col w-full max-w-6xl mt-32 z-10 px-4">
+      <div className="flex flex-col w-full max-w-6xl md:mt-32 mt-14 z-10 px-4">
         {/* Header */}
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-4 w-full">
