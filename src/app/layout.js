@@ -5,6 +5,7 @@ import { Fira_Code } from "next/font/google";
 import Footer from "@/component/footer";
 import SmoothScroll from "@/component/SmoothScroll";
 import Layoutwraper from "@/component/layoutwraper"
+import WelcomeIntro from "@/component/WelcomeIntro";
 const firaCode = Fira_Code({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         className={`${firaCode.variable} antialiased`}
         style={{ fontFamily: "var(--font-fira), monospace" }}
       >
+        <WelcomeIntro />
         <SmoothScroll>
           <Navbar />
          <div >
