@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       id: 3,
-      src: "/straight-edge.png",
+      src: "/projects/straight-edge.png",
       alt: "Barber booking website",
       title: "Straight Edge",
       description: "Barber website for easy appointment booking.",
@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       id: 1,
-      src: "/xaviquehero.png",
+      src: "/projects/xaviquehero.png",
       alt: "An Ecommerce website",
       title: "Xavique",
       description: "E-commerce website for buying and selling products.",
@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      src: "/charsi.png",
+      src: "/projects/charsi.png",
       alt: "Blog website logo",
       title: "Charsi",
       description: "A full-stack Blog platform where you can read and write posts.",
